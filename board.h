@@ -12,9 +12,17 @@
 
 struct board {
 
-	std::vector<int> row[5];
-	std::vector<int> column[5];
+	int row[4];
+	int column[4];
 
+	board()
+	{
+		for(int i = 0; i < 5; i++)
+		{
+			row[i] = 0;
+			column[i] = 0;
+		}
+	}
 };
 
 
