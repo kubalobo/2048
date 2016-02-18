@@ -20,10 +20,12 @@ int main() {
 	board plansza;
 
 	plansza.field[0][0] = 1;
+	plansza.field[0][2] = 1;
+	plansza.field[1][2] = 1;
 
 	printer(plansza);
 
-	wait();
+	gameController(plansza);
 
 	return 0;
 }
