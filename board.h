@@ -8,20 +8,15 @@
 #ifndef BOARD_H_
 #define BOARD_H_
 
-#include <vector>
-
 struct board {
 
-	int row[4];
-	int column[4];
+	int field[4][4];
 
 	board()
 	{
-		for(int i = 0; i < 5; i++)
-		{
-			row[i] = 0;
-			column[i] = 0;
-		}
+		for (int i = 0; i < 4; i++)
+			for (int j = 0; j < 4; j++)
+				field[i][j] = 0;
 	}
 };
 

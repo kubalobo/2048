@@ -9,11 +9,21 @@
 #include <iostream>
 
 #include "board.h"
+#include "printer.h"
+#include "gameController.h"
 
 using namespace std;
 
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
+	board plansza;
+
+	plansza.field[0][0] = 1;
+
+	printer(plansza);
+
+	wait();
+
 	return 0;
 }
