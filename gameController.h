@@ -196,5 +196,6 @@ board move(board plansza, enum direction arrow)
 		break;
 	}
 
+
 	return plansza;
 }
