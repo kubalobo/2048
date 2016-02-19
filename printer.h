@@ -5,6 +5,7 @@
 
 void printer(board plansza)
 {
+	system("cls");	//czyszczenie ekranu
 	for (int i = 0; i < 4; i++)
 	{
 		for (int j = 0; j < 4; j++)

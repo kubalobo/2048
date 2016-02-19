@@ -10,7 +10,7 @@
 
 struct board {
 
-	int field[4][4];
+	int field[4][4]; //[x][y] (matematycznie) - [kolumna][wiersz] - numerowane od zera do trzech
 
 	board()
 	{

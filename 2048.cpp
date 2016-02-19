@@ -19,9 +19,14 @@ int main() {
 
 	board plansza;
 
-	plansza.field[0][0] = 1;
+	plansza.field[0][1] = 1;
+	plansza.field[2][1] = 1;
 	plansza.field[0][2] = 1;
 	plansza.field[1][2] = 1;
+	plansza.field[2][3] = 1;
+	plansza.field[2][2] = 1;
+	plansza.field[2][0] = 1;
+	
 
 	printer(plansza);
 
