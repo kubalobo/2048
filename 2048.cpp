@@ -1,19 +1,18 @@
 //============================================================================
 // Name        : 2048.cpp
 // Author      : 
-// Version     :
-// Copyright   : Your copyright notice
+// Version     : Alpha
 // Description : 2048 super game
 //============================================================================
 
 #include <iostream>
+
 #include "board.h"
 #include "printer.h"
 #include "gameController.h"
 #include "newElementsGenerator.h"
 
 using namespace std;
-
 
 int main() {
 

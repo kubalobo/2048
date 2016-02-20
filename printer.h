@@ -3,6 +3,8 @@
 #include <iostream>
 #include <cstdlib>
 
+#include "board.h"
+
 void printer(board plansza)
 {
 	system("cls");	//czyszczenie ekranu

@@ -11,9 +11,7 @@
 #include <cstdlib>
 #include <ctime>
 
-using namespace std;
-
-
+#include "board.h"
 
 int new_element()
 {

@@ -3,6 +3,10 @@
 #include<conio.h>
 #include<iostream>
 
+#include "board.h"
+#include "printer.h"
+#include "newElementsGenerator.h"
+
 enum direction
 {
 	UP = 1,
