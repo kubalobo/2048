@@ -2,7 +2,8 @@
 
 #include<conio.h>
 #include<iostream>
-
+#include "board.h"
+#include "newElementsGenerator.h"
 
 enum direction
 {
@@ -13,6 +14,7 @@ enum direction
 };
 
 board move(board plansza, enum direction arrow);
+board plansza;
 
 void gameController(board plansza)
 {
@@ -29,22 +31,21 @@ void gameController(board plansza)
 			{
 			case 72: //strza³ka w górê
 				plansza = move(plansza, UP);
-				printer(plansza);
 				break;
 			case 80: //strza³ka w dó³
 				plansza = move(plansza, DOWN);
-				printer(plansza);
 				break;
 			case 75: //strza³ka w lewo
 				plansza = move(plansza, LEFT);
-				printer(plansza);
 				break;
 			case 77: //strza³ka w prawo
 				plansza = move(plansza, RIGHT);
-				printer(plansza);
 				break;
 			}
 			znak = 0;
+
+			newElementsGenerator(plansza);
+			printer(plansza);
 			break;
 		case 13: //ENTER
 			break;
