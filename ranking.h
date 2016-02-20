@@ -5,11 +5,35 @@
  *      Author: Karolina Kamiñska
  */
 
-#ifndef 2048_2048_RANKING_H_
-#define 2048_2048_RANKING_H_
+#pragma once
+
+#include <iostream>
+#include "board.h"
 
 
+using namespace std;
+
+int max(board plansza)
+{
+    int i, j, max;
+    for(i=0;i<4;++i)
+    {
+    	max = plansza.field[i][0];
+        for(j=0;j<4;++j)
+        {
+            if(plansza.field[i][j]>max) max=plansza.field[i][j];
+        }
+    }
+ return max;
+}
 
 
+void make_ranking()
+{
 
-#endif /* 2048_2048_RANKING_H_ */
+}
+
+void show_ranking()
+{
+
+}
