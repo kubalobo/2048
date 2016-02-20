@@ -33,8 +33,9 @@ void newElementsGenerator(board& plansza)
 	int a =(rand() %  4) + 0;
 	int b =(rand() %  4) + 0;
 	if (plansza.field[a][b]==0)
-	plansza.field[a][b]= new_element();
-	else newElementsGenerator(plansza);
+		plansza.field[a][b]= new_element();
+	else 
+		newElementsGenerator(plansza);
 
 }
 
