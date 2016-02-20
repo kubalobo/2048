@@ -18,7 +18,6 @@ using namespace std;
 
 int new_element()
 {
-	//srand( time( NULL ) );
 	int random_number = (rand() %100);
 
 	if (random_number < 20)
