@@ -1,5 +1,4 @@
-#ifndef BOARD_H_
-#define BOARD_H_
+#pragma once
 
 struct board {
 
@@ -12,7 +11,3 @@ struct board {
 				field[i][j] = 0;
 	}
 };
-
-
-
-#endif /* BOARD_H_ */

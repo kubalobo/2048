@@ -2,8 +2,6 @@
 
 #include<conio.h>
 #include<iostream>
-#include "board.h"
-#include "newElementsGenerator.h"
 
 enum direction
 {

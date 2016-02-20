@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include "board.h"
 #include <cstdlib>
 
 void printer(board plansza)

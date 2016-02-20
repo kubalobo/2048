@@ -8,7 +8,6 @@
 #pragma once
 
 #include <iostream>
-#include "board.h"
 #include <cstdlib>
 #include <ctime>
 
