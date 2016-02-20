@@ -2,6 +2,7 @@
 
 #include<conio.h>
 #include<iostream>
+#include "newElementsGenerator.h"
 
 #include "board.h"
 #include "printer.h"
