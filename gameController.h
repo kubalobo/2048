@@ -3,7 +3,6 @@
 #include<conio.h>
 #include<iostream>
 
-board move(board plansza, enum direction arrow);
 
 enum direction
 {
@@ -12,6 +11,8 @@ enum direction
 	DOWN = 3,
 	LEFT = 4
 };
+
+board move(board plansza, enum direction arrow);
 
 void gameController(board plansza)
 {

@@ -1,10 +1,3 @@
-/*
- * board.h
- *
- *  Created on: 10 lut 2016
- *      Author: kubalobo
- */
-
 #ifndef BOARD_H_
 #define BOARD_H_
 
