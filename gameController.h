@@ -6,6 +6,7 @@
 #include "board.h"
 #include "printer.h"
 #include "newElementsGenerator.h"
+#include "ranking.h"
 
 enum direction
 {
@@ -53,6 +54,7 @@ void gameController(board plansza)
 			break;
 		case 27: //ESC
 			koniec = true;
+			GameOver();
 			break;
 		}
 	}
