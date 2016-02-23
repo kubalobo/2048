@@ -13,9 +13,10 @@
 
 #include "board.h"
 
+//Losuje element do wstawienia
 int new_element()
 {
-	int random_number = (rand() %100);
+	int random_number = (rand() % 100);
 
 	if (random_number < 20)
 	return 4;
@@ -23,6 +24,7 @@ int new_element()
 	return 2;
 }
 
+//Wstawia nowy element w losowe miejsce na planszy | jesli zajete to rekurencyjnie powtarza az trafi - B£¥D!
 void newElementsGenerator(board& plansza)
 {
 

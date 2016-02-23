@@ -18,12 +18,15 @@ int main() {
 
 	board plansza;
 	srand( time( NULL ) );
+
+	//Dwa poczatkowe elementy
 	newElementsGenerator(plansza);
 	newElementsGenerator(plansza);
 
-
+	//Wydruk pierwszej planszy
 	printer(plansza);
 
+	//Uruchomienie glownej petli programu
 	gameController(plansza);
 
 

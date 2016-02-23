@@ -7,7 +7,9 @@
 
 void printer(board plansza)
 {
-	system("cls");	//czyszczenie ekranu
+	system("cls");	//czyszczenie ekranu - tylko windows!
+
+	//Prymitywna drukarka - do rozwiniecia przez Weronike
 	for (int i = 0; i < 4; i++)
 	{
 		for (int j = 0; j < 4; j++)

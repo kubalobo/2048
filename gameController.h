@@ -15,22 +15,23 @@ enum direction
 	LEFT = 4
 };
 
-board move(board plansza, enum direction arrow);
-board plansza;
+board move(board plansza, enum direction arrow); //deklaracja - funkcja nizej
+
 
 void gameController(board plansza)
 {
 	bool koniec = false;
 	while (koniec == false)
 	{
-		unsigned char znak = _getch();
+		unsigned char znak = _getch(); //oczekiwanie na znak
 		switch (znak)
 		{
 		case 0: //klawisze specjalne (czasem zero czasem 224 - zale¿ne od pc'ta chyba)
 		case 224: //klawisze specjalne
-			znak = _getch();
+			znak = _getch(); //jezeli znak byl znakiem specjalnym to to pobiera jego druga czesc
 			switch (znak)
 			{
+			//Wywolanie funkcji move z odpowiednim parametrem
 			case 72: //strza³ka w górê
 				plansza = move(plansza, UP);
 				break;
@@ -48,10 +49,11 @@ void gameController(board plansza)
 
 			newElementsGenerator(plansza);
 			printer(plansza);
+
 			break;
-		case 13: //ENTER
+		case 13: //ENTER - na razie nic...
 			break;
-		case 27: //ESC
+		case 27: //ESC - zakonczenie gry
 			koniec = true;
 			break;
 		}
@@ -60,6 +62,8 @@ void gameController(board plansza)
 
 board move(board plansza, enum direction arrow)
 {
+	//Sprawdzenie wszystkich pol pod katem mozliwosci przesuniecia / scalenia w okreslonym kierunku
+
 	switch (arrow)
 	{
 	case UP:
@@ -201,5 +205,5 @@ board move(board plansza, enum direction arrow)
 	}
 
 
-	return plansza;
+	return plansza; //Rozwazamy jeszcze edycje przez adres - &
 }
