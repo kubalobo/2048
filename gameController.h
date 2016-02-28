@@ -24,6 +24,8 @@ void gameController(board plansza)
 	bool koniec = false;
 	while (koniec == false)
 	{
+
+
 		EndOfGame(plansza);
 		unsigned char znak = _getch(); //oczekiwanie na znak
 		switch (znak)
