@@ -6,6 +6,7 @@
 #include "board.h"
 #include "printer.h"
 #include "newElementsGenerator.h"
+#include "EndOfGame.h"
 
 enum direction
 {
@@ -23,6 +24,7 @@ void gameController(board plansza)
 	bool koniec = false;
 	while (koniec == false)
 	{
+		EndOfGame(plansza);
 		unsigned char znak = _getch(); //oczekiwanie na znak
 		switch (znak)
 		{
@@ -67,6 +69,7 @@ board move(board plansza, enum direction arrow)
 	switch (arrow)
 	{
 	case UP:
+
 		for (int i = 0; i < 4; i++)
 		{
 			for (int j = 1; j < 4; j++)
