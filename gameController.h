@@ -49,7 +49,12 @@ void gameController(board plansza)
 			}
 			znak = 0;
 
-			newElementsGenerator(plansza);
+			if (newElementsGenerator(plansza))	//Dodaje elementu i jednoczesnie sprawdza czy KONIEC GRY
+			{
+				std::cout << "Game Over" << std::endl;
+				koniec = true;
+				break;
+			}
 			printer(plansza);
 
 			break;

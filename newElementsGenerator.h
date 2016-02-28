@@ -24,8 +24,8 @@ int new_element() {
 		return 2;
 }
 
-//Wstawia nowy element w losowe miejsce na planszy | jesli zajete to rekurencyjnie powtarza az trafi - B£¥D!
-void newElementsGenerator(board& plansza) {
+//Wstawia nowy element w losowe miejsce na planszy | zwraca true gdy KONIEC GRY
+bool newElementsGenerator(board& plansza) {
 
 	int zera = 0;
 
@@ -35,7 +35,7 @@ void newElementsGenerator(board& plansza) {
 				zera++;
 
 	if (zera == 0 && EndOfGame(plansza) == true) {
-		std::cout << "Game Over"; //SprawdŸ, czy: EndOfGame(plansza);
+		return true;	//KONIEC GRY
 	}
 
 	else {
@@ -47,7 +47,7 @@ void newElementsGenerator(board& plansza) {
 		else
 			newElementsGenerator(plansza);
 	}
-
+	return false;
 }
 
 /*
