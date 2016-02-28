@@ -43,6 +43,8 @@ int new_element()
 		}
 }*/
 
+
+
 void newElementsGenerator(board& plansza)
 {
 
