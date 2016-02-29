@@ -37,8 +37,8 @@ bool newElementsGenerator(board& plansza) {
 	if (zera == 0 && EndOfGame(plansza) == true) {
 		return true;	//KONIEC GRY
 	}
-
-	else {
+	else if (zera != 0)
+	{
 		int a = (rand() % 4) + 0;
 		int b = (rand() % 4) + 0;
 
