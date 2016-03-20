@@ -6,7 +6,11 @@
 #include "board.h"
 #include "printer.h"
 #include "newElementsGenerator.h"
+<<<<<<< HEAD
 #include "EndOfGame.h"
+=======
+#include "ranking.h"
+>>>>>>> refs/remotes/origin/Karolina
 
 enum direction
 {
@@ -62,6 +66,7 @@ void gameController(board plansza)
 			break;
 		case 27: //ESC - zakonczenie gry
 			koniec = true;
+			GameOver();
 			break;
 		}
 	}

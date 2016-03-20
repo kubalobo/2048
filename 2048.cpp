@@ -11,10 +11,16 @@
 #include "printer.h"
 #include "gameController.h"
 #include "newElementsGenerator.h"
+#include "ranking.h"
 
 using namespace std;
 
+
+
 int main() {
+
+	Start();
+	LoadData();
 
 	board plansza;
 	srand( time( NULL ) );
@@ -28,6 +34,8 @@ int main() {
 
 	//Uruchomienie glownej petli programu
 	gameController(plansza);
+
+	SaveData();
 
 
 	return 0;
