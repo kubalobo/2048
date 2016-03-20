@@ -54,6 +54,7 @@ void gameController(board plansza)
 			{
 				std::cout << "Game Over" << std::endl;
 				koniec = true;
+				GameOver();
 				break;
 			}
 			printer(plansza);

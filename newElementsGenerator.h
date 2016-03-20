@@ -24,29 +24,29 @@ int new_element() {
 		return 2;
 }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //Wstawia nowy element w losowe miejsce na planszy | zwraca true gdy KONIEC GRY
 bool newElementsGenerator(board& plansza) {
 
 	int zera = 0;
-=======
-void newElementsGenerator(board& plansza)
-{
-	for (int i = 0; i <10; ++i)
-	{
-		for (int j = 0; j<10; ++j)
-		{
-			if (plansza.field[i][j] ==0)
-				GameOver();
-		}
-	}
-	int a =(rand() %  4) + 0;
-	int b =(rand() %  4) + 0;
-	if (plansza.field[a][b]==0)
-		plansza.field[a][b]= new_element();
-	else 
-		newElementsGenerator(plansza);
->>>>>>> refs/remotes/origin/Karolina
+//=======
+//void newElementsGenerator(board& plansza)
+//{
+//	for (int i = 0; i <10; ++i)
+//	{
+//		for (int j = 0; j<10; ++j)
+//		{
+//			if (plansza.field[i][j] ==0)
+//				GameOver();
+//		}
+//	}
+//	int a =(rand() %  4) + 0;
+//	int b =(rand() %  4) + 0;
+//	if (plansza.field[a][b]==0)
+//		plansza.field[a][b]= new_element();
+//	else 
+//		newElementsGenerator(plansza);
+//>>>>>>> refs/remotes/origin/Karolina
 
 	for (int i = 0; i < 4; i++)
 		for (int j = 0; j < 4; j++)

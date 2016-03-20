@@ -128,7 +128,7 @@ bool GameOver()
 	string namez;
 	cin >> namez;
 	SetName(namez);
-	getch();
+	_getch();
 	return 0;
 }
 

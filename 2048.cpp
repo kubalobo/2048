@@ -23,7 +23,7 @@ int main() {
 	LoadData();
 
 	board plansza;
-	srand( time( NULL ) );
+	srand( (int) time( NULL ) );
 
 	//Dwa poczatkowe elementy
 	newElementsGenerator(plansza);
