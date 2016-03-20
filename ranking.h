@@ -123,7 +123,7 @@ bool GameOver()
 	cout << "=========================" << endl;
 	cout << "        KONIEC GRY       " << endl;
 	cout << "=========================" << endl;
-	cout << "Suma punktów" << GetScore() << endl;
+	cout << "Suma punktow: " << GetScore() << endl;
 	cout << "Podaj swoje imie: " << endl;
 	string namez;
 	cin >> namez;
