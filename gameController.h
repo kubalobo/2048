@@ -6,11 +6,8 @@
 #include "board.h"
 #include "printer.h"
 #include "newElementsGenerator.h"
-<<<<<<< HEAD
 #include "EndOfGame.h"
-=======
 #include "ranking.h"
->>>>>>> refs/remotes/origin/Karolina
 
 enum direction
 {
